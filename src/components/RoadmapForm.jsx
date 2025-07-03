@@ -70,11 +70,11 @@ const RoadmapForm = ({ onRoadmapGenerated, setLoading }) => {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-4 sm:mb-6">
-        {/* <img
-          src="dist/assets/SV4.png"
+        <img
+          src="/assets/Sv_wName.png"
           alt="Socio Veyro Logo"
-          className="h-24 sm:h-72 w-auto mx-auto mb-2"
-        /> */}
+          className="h-24 sm:h-64 w-auto mx-auto mb-2"
+        />
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2">
           Create Your Social Media Blueprint
         </h2>

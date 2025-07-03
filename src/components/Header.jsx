@@ -11,17 +11,17 @@ const Header = ({ currentView, setCurrentView }) => {
 
           {/* Logo and Title */}
           <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
-            {/* <img
-              src="dist/assets/Sv4_Logo.png"
+            <img
+              src="/assets/Sv_Logo.png"
               alt="Socio Veyro Logo"
-              className="h-16 sm:h-20 max-h-20s w-auto object-contain"
-            /> */}
+              className="h-16 sm:h-20 max-h-12 w-auto object-contain"
+            />
             <div className="leading-tight">
               <h1 className="text-xl sm:text-xl lg:text-2xl font-bold text-white">
                 Socio-Veyro
               </h1>
               <p className="text-gray-300 text-sm sm:text-base">
-                Strategic blueprints for Digital Growth
+                Your compass for the ever-changing world of social media.
               </p>
             </div>
           </div>
