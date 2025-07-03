@@ -75,6 +75,7 @@ const RoadmapForm = ({ onRoadmapGenerated, setLoading }) => {
           alt="Socio Veyro Logo"
           className="h-24 sm:h-64 w-auto mx-auto mb-2"
         />
+        
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2">
           Create Your Social Media Blueprint
         </h2>
@@ -83,7 +84,7 @@ const RoadmapForm = ({ onRoadmapGenerated, setLoading }) => {
           Our AI will create a detailed 8-module roadmap that anyone can follow, including specialized platforms like Reddit and Telegram when relevant.
         </p>
       </div>
-
+      
       {error && (
         <div className="mb-6 bg-red-900/20 border border-red-500/30 rounded-lg p-4 flex items-start space-x-3 shadow-lg shadow-red-500/10">
           <AlertCircle className="h-5 w-5 text-red-400 mt-0.5 flex-shrink-0" />
