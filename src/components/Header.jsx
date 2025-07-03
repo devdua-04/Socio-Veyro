@@ -5,29 +5,29 @@ const Header = ({ currentView, setCurrentView }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
   return (
-    <header className="bg-gray-900 shadow-2xl border-b border-red-900/30 backdrop-blur-sm max-h-24 overflow-hidden">
-      <div className="container mx-auto px-4 py-3">
-        <div className="flex items-center justify-between">
+    <header className="bg-gray-900 shadow-2xl border-b border-red-900/30 backdrop-blur-sm">
+      <div className="container mx-auto px-4 py-2 sm:py-3">
+        <div className="flex flex-wrap items-center justify-between">
 
           {/* Logo and Title */}
-          <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+          <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0 min-w-0">
             <img
               src="/assets/Sv_Logo.png"
               alt="Socio Veyro Logo"
-              className="h-16 sm:h-20 max-h-12 w-auto object-contain"
+              className="h-12 sm:h-16 md:h-20 w-auto object-contain max-h-20"
             />
-            <div className="leading-tight">
-              <h1 className="text-xl sm:text-xl lg:text-2xl font-bold text-white">
+            <div className="leading-tight truncate">
+              <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-white">
                 Socio-Veyro
               </h1>
-              <p className="text-gray-300 text-sm sm:text-base">
-                Your compass for the ever-changing world of social media.
+              <p className="text-gray-300 text-xs sm:text-sm md:text-base">
+                Your compass for the world of social media.
               </p>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-6">
+          <div className="hidden lg:flex items-center space-x-4 md:space-x-6 mt-4 lg:mt-0">
             <button
               onClick={() => setCurrentView('roadmap')}
               className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-300 ${
@@ -55,7 +55,7 @@ const Header = ({ currentView, setCurrentView }) => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-gray-400 hover:text-white transition-colors"
+            className="lg:hidden p-2 text-gray-400 hover:text-white transition-colors ml-2"
           >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -77,7 +77,7 @@ const Header = ({ currentView, setCurrentView }) => {
                 }`}
               >
                 <Target className="h-5 w-5" />
-                <span className="font-medium">Roadmap Generator</span>
+                <span className="font-medium text-sm sm:text-base">Roadmap Generator</span>
               </button>
               <button
                 onClick={() => {
@@ -91,7 +91,7 @@ const Header = ({ currentView, setCurrentView }) => {
                 }`}
               >
                 <Calendar className="h-5 w-5" />
-                <span className="font-medium">Content Calendar</span>
+                <span className="font-medium text-sm sm:text-base">Content Calendar</span>
               </button>
             </div>
           </div>
