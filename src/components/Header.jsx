@@ -14,7 +14,7 @@ const Header = ({ currentView, setCurrentView }) => {
             <img
               src="/assets/Sv_Logo.png"
               alt="Socio Veyro Logo"
-              className="h-12 sm:h-16 md:h-20 w-auto object-contain max-h-20"
+              className="h-8 sm:h-12 md:h-12 w-auto object-contain max-h-20"
             />
             <div className="leading-tight truncate">
               <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-white">

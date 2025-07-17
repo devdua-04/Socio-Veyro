@@ -73,15 +73,16 @@ const RoadmapForm = ({ onRoadmapGenerated, setLoading }) => {
         <img
           src="/assets/Sv_wName.png"
           alt="Socio Veyro Logo"
-          className="h-24 sm:h-64 w-auto mx-auto mb-2"
+          className="h-24 sm:h-40 w-auto mx-auto mb-2"
         />
         
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2">
-          Create Your Social Media Blueprint
+          Design a Strategy as Bold as Your Brand.
         </h2>
         <p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-2xl mx-auto">
-          Get a comprehensive, execution-ready social media strategy tailored to your brand.
-          Our AI will create a detailed 8-module roadmap that anyone can follow, including specialized platforms like Reddit and Telegram when relevant.
+          Build a focused, results-driven blueprint designed to elevate your brand across platforms.
+           Socio-Veyro delivers a clear, 8-module roadmap that simplifies execution and ensures consistency —
+           including targeted strategies for platforms like Reddit, Telegram, and more, whenever they align with your goals.
         </p>
       </div>
       
